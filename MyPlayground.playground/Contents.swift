@@ -103,5 +103,45 @@ for animal3 in cuteness {
 }
 
 
+// functions
+func doMath() {
+    print("Doing Math")
+}
+
+doMath()
+
+func doMath2(a:Double, b:Double, operation:String) {
+    print("performing ", operation, " on ", a, " and ", b)
+}
+
+doMath2(2.0, b:1.0, operation:"+")
+
+func perform(operation:String, on a:Double, and b:Double) {
+    print("performing ", operation, " on ", a, " and ", b)
+}
+
+perform("*", on:4, and:5)
+
+
+func perform2(operation:String, on a:Double, and b:Double) ->Double {
+    var result:Double = 0.0
+    switch  operation {
+    case "+":
+        result = a + b
+    case "-":
+        result = a - b
+    case "*":
+        result = a * b
+    case "/":
+        result = a / b
+    default:
+        result = 0.0
+    }
+    return result;
+}
+
+let result = perform2("*", on:5.0, and:2.0);
+
+
 
 
