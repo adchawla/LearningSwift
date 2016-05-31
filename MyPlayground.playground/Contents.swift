@@ -72,5 +72,36 @@ for num2 in [2,4,5,6,9,0] {
     num2
 }
 
+// arrays and dictionaries
+let animals:[String] = ["Cows", "Dogs", "Bunny"]
+animals[1]
+animals[2]
+animals[0]
+//animals[3]
+//animals[2]="Rabbit"
+var animals2:[String] = ["Cows", "Dogs", "Bunny"]
+animals2[1]
+animals2[2]
+animals2[0]
+//animals[3]
+animals2[2]="Rabbit"
+
+for animal in animals2 {
+    animal
+}
+
+// dictionaries
+var cuteness = ["Cow"   : "Not very",
+                "Dog"   : "Cute",
+                "Bunny" : "very cute"]
+
+cuteness["Dog"]
+cuteness["Tiger"] // that means return is String?
+
+for animal3 in cuteness {
+    animal3
+}
+
+
 
 
