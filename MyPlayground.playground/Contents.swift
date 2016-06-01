@@ -288,5 +288,26 @@ let statistics = calculateStatistics([5, 3, 100, 3, 9])
 print(statistics.sum)
 print(statistics.2)
 
+// function taking variable number of arguments
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+}
+sumOf()
+sumOf(42, 597, 12)
+
+// function taking variable number of arguments and calculating average
+func averageOf(numbers: Int...) -> Double {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return Double(sum) / Double(numbers.count)
+}
+
+averageOf(42, 597, 12)
 
 
