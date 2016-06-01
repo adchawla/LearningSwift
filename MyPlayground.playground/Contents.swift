@@ -186,6 +186,23 @@ apples = 5
 appleSummary
 
 
+var shoppingList = ["catfish", "water", "tulips", "bluepaint"]
+shoppingList[1] = "bottle of water"
+
+shoppingList
+
+var occupations = [
+    "Malcolm"   : "Captain",
+    "Kaylee"    : "Mechanic"
+]
+
+occupations["Jayne"]
+occupations["Jayne"] = "Public Relations"
+
+occupations
+let emptyArray = [String]()
+let emptyDictionary = [String:Float]()
+
 
 
 
