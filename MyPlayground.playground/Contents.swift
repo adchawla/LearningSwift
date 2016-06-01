@@ -142,6 +142,51 @@ func perform2(operation:String, on a:Double, and b:Double) ->Double {
 
 let result = perform2("*", on:5.0, and:2.0);
 
+let x = 1
+
+let y:Double = 1
+
+//let z:Int = 1.1
+
+struct Animal {
+    var name:String = ""
+    var heightInInches:Double = 0.0;
+    var heightInCM: Double {
+        get {
+            return 2.54 * heightInInches;
+        }
+        set(newHeightInCM) {
+            heightInInches = newHeightInCM / 2.54;
+        }
+    }
+}
+
+var dog = Animal(name:"Fido", heightInInches: 50);
+dog.heightInCM
+dog.heightInCM = 254
+dog.heightInInches
+
+let myFloat:Float = 4
+
+myFloat
+
+let label = "The width is "
+let width = 94
+
+let widthLabel = label + String(width)
+
+//let widthlabel2 = label + width
+
+var apples = 2.5
+let oranges = "Aman"
+
+var appleSummary = "I have \(apples) apples and \(oranges) oranges"
+
+apples = 5
+appleSummary
+
+
+
 
 
 
